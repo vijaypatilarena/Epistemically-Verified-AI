@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: eva
+Version: 0.1.0
+Summary: Epistemically Verified AI
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: sentence-transformers
+Dynamic: license-file
