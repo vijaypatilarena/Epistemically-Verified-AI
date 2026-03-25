@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eva-reliability"
+version = "0.1.0"
+description = "EVA — Epistemically Verified AI: A model-agnostic reliability layer for LLM outputs"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Vijay Patil", email = "vijapatil03528@gmail.com"}
+]
+dependencies = [
+    "numpy",
+    "scikit-learn",
+    "typing-extensions",
+    "sentence-transformers"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["eva*"]
